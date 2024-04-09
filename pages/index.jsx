@@ -29,7 +29,7 @@ export default function Home() {
           
           <div className={styles.profileContent}>
             <p className={styles.description}>
-              Soy Alejandro, Ingeniero Civil Informático especializado en desarrollo web. Me apasiona crear soluciones tecnológicas innovadoras.
+              Soy Alejandro, Ingeniero Civil Informático especializadoaefeafeafeafea en desarrollo web. Me apasiona crear soluciones tecnológicas innovadoras.
             </p>
             <div className={styles.profileLinks}>
               <a href="https://www.linkedin.com/in/alejandro-lobos-arenas/" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>Linkedin</a>
