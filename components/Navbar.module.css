@@ -1,0 +1,88 @@
+.navbar {
+    position: fixed; /* Esto mantiene el navbar fijo en la parte superior */
+    top: 0; /* Alinea el navbar en la parte superior de la ventana del navegador */
+    left: 0; /* Alinea el navbar al lado izquierdo de la ventana del navegador */
+    width: 100%; /* Asegura que el navbar se extienda a lo ancho de la pantalla */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros contenidos */
+    opacity: 70%;
+    
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .logo a:hover{
+    color: #0096c4;
+  }
+  
+  .navLinks {
+    display: flex; /* Asegura que flex esté activo para posicionar correctamente los enlaces */
+    /* background-color: red; */
+    transition: all 0.3s ease; /* Suaviza la transición de aparición */
+    z-index: -1; /* Asegúrate de que el menú no interfiera con otros elementos */
+  }
+
+  .navLinks li {
+    margin-left:100px;
+  }
+  .navLinks li a:hover{
+    color: #0096c4;
+  }
+  .navLinks li  {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .mobileMenuIcon {
+    display: none; /*Por defecto, no mostrar el ícono del menú móvil*/
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .showMenu {
+    transform: translateY(0); /* Muestra el menú cuando isOpen es true */
+    z-index: 999; /* Asegura que el menú esté sobre otros elementos */
+  }
+  
+  /* Estilos para dispositivos móviles */
+@media (max-width: 1125px) {
+
+   .navbar{
+    flex-direction: column;
+    justify-content: center;
+
+
+   } 
+  .mobileMenuIcon {
+    display: block; /* Muestra el icono del menú en pantallas pequeñas */
+
+  }
+
+  .navLinks {
+    display: none; /* Oculta los enlaces por defecto en móviles */
+  }
+
+  .navLinks.showMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: none;
+  }
+  .navLinks li {
+    margin-left:0px;
+    margin-top: 10px;
+  }
+}
+
+
+  

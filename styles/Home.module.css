@@ -1,0 +1,88 @@
+.container {
+    padding: 0 2rem;
+    margin-top: 100px; /* Ajusta según la altura de tu Navbar */
+      
+  }
+  
+  .main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+  .title {
+    margin: 0;
+    line-height:3rem;
+    font-size: 3rem;
+  }
+  
+  .description {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .profileImage {
+    margin-top: 2rem;
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+
+  @media (max-width: 1125px) {
+    .container {
+     
+      margin-top: 150px; /* Ajusta según la altura de tu Navbar */
+        
+    }
+   
+    .title {
+      margin: 0;
+      line-height: 2rem;
+      font-size: 2rem;
+    }
+  
+    .description {
+      text-align: center;
+      line-height: 2rem;
+      font-size: 1rem;
+    }
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos del flex container */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Añade un espacio entre la imagen y el contenido */
+  }
+  
+  .profileContent {
+    max-width: 60%; /* Ajusta este valor según necesites */
+  }
+  
+  .description {
+    margin-bottom: 20px; /* Añade un poco de espacio sobre los botones */
+  }
+  
+  .profileLinks {
+    display: flex;
+    gap: 10px; /* Añade un espacio entre los botones */
+  }
+  
+  .linkButton {
+    background-color: #007bff; /* Color de fondo para los botones */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    padding: 10px 15px; /* Padding para los botones */
+    border-radius: 5px; /* Bordes redondeados para los botones */
+    display: inline-block; /* Hace que los enlaces se comporten como bloques inline */
+  }
+  
+  .linkButton:hover {
+    background-color: #0056b3; /* Oscurece el botón al pasar el mouse */
+  }
