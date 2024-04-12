@@ -2,22 +2,25 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import Banner from '../components/Banner'
 
 export default function Home() {
+
+
+
+
   return (
     <div className={styles.container}>
-      <Head>
+      {/* <Head>
         <title>Mi Portafolio</title>
         <meta name="description" content="Bienvenido a mi portafolio personal" />
-      </Head>
-
-      <Navbar />
-
-            <main className={styles.main}>
+      </Head> */}
+      <Banner/>
+      {/* <Navbar /> */}
+      <main className={styles.main}>
         <h1 className={styles.title}>
           Bienvenido a Mi Portafolio
         </h1>
-        
         <div className={styles.profileSection}>
           <Image
             src="/images/profile.jpg"
@@ -37,7 +40,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Acerca de mi, Experiencia, CV, Contacto */}
       </main>
     </div>
   );
 }
+
+
