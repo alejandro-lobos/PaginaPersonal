@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import Banner from '../components/Banner'
+import Footer from '../components/Footer';
 
 export default function Home() {
 
@@ -16,8 +17,20 @@ export default function Home() {
         <meta name="description" content="Bienvenido a mi portafolio personal" />
       </Head> */}
       <Banner/>
-      {/* <Navbar /> */}
-      <main className={styles.main}>
+      <Navbar />
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      <Footer/>
+      
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Bienvenido a Mi Portafolio
         </h1>
@@ -42,9 +55,9 @@ export default function Home() {
               <a href="https://github.com/alejandro-lobos" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>GitHub</a>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Acerca de mi, Experiencia, CV, Contacto */}
-      </main>
+      {/* </main> */}
     </div>
   );
 }

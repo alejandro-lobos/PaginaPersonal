@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet');
+
+
+
 .navbar {
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente al navbar */
     position: fixed; /* Esto mantiene el navbar fijo en la parte superior */
     top: 0; /* Alinea el navbar en la parte superior de la ventana del navegador */
     left: 0; /* Alinea el navbar al lado izquierdo de la ventana del navegador */
@@ -7,17 +12,25 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: transparent; /* fondo inicialmente transparente */
+    /* background-color: #333; */
     color: white;
     z-index: 1000; /* Asegura que el navbar esté por encima de otros contenidos */
     opacity: 70%;
+    transition: background-color 0.3s; /* suaviza la transición del color de fondo */
     
   }
+  /* Navbar.module.css */
+    .scrolled {
+      background-color: rgba(51, 51, 51, 0.7); /* o el color de fondo que desees con la opacidad */
+    }
+
   
   .logo a {
     color: white;
     text-decoration: none;
     font-size: 24px;
+    transition: color 0.8s; /* Suaviza la transición del color */
   }
   .logo a:hover{
     color: #0096c4;
@@ -32,14 +45,44 @@
 
   .navLinks li {
     margin-left:100px;
+    transition: background-color 2s; /* suaviza la transición del color de fondo */
+
   }
-  .navLinks li a:hover{
+  .navLinks li a{
+    font-weight: 500; /* Aumenta según la fuente que estés usando */
+    position: relative; /* Necesario para posicionar el pseudoelemento para el subrayado */
+    color: white; /* Color inicial del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    transition: color 0.8s; /* Suaviza la transición del color */
+  }
+  .navLinks li a:hover {
     color: #0096c4;
+
   }
   .navLinks li  {
     color: white;
     text-decoration: none;
   }
+  /* Subrayado que se expande desde el centro */
+.navLinks a::before {
+  content: '';
+  position: absolute;
+  width: 0; /* El subrayado comienza sin ancho */
+  height: 2px; /* El grosor del subrayado */
+  bottom: -5px; /* Distancia desde la parte inferior del enlace */
+  left: 50%; /* Comienza en el centro */
+  background-color: #0096c4; /* Color del subrayado */
+  visibility: hidden; /* Ocultamos el subrayado por defecto */
+  transform: translateX(-50%); /* Alinea correctamente el inicio del efecto */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hacer visible el subrayado y expandir cuando se pasa el mouse */
+.navLinks a:hover::before,
+.navLinks a:focus::before { /* Asegúrate de incluir :focus para accesibilidad */
+  visibility: visible; /* Hacemos el subrayado visible */
+  width: 100%; /* El subrayado se expande al 100% del ancho */
+}
   
   .mobileMenuIcon {
     display: none; /*Por defecto, no mostrar el ícono del menú móvil*/
