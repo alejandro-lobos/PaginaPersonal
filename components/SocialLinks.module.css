@@ -1,0 +1,42 @@
+/* components/SocialLinks.module.css */
+.socialLinksContainer {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: #333; /* Ajusta el color según tu diseño */
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+  }
+  
+  .card {
+    padding: 20px;
+    background-color: #007bff; /* Color para LinkedIn */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 150px; /* Ajusta el tamaño según necesites */
+    text-align: center;
+    transition: background-color 0.3s ease;
+  
+  
+  }
+    /* Efectos al pasar el mouse */
+.card:hover {
+        background-color: #0056b3; /* Color más oscuro para el hover */
+      }
+  
+  .card:nth-child(2) { /* Estilos específicos para la tarjeta de GitHub */
+    background-color: #333; /* Color para GitHub */
+  
+  }
+  .card:nth-child(2):hover {
+    background-color: #222; /* Color más oscuro para el hover de GitHub */
+  }
+  

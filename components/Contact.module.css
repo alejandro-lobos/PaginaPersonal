@@ -1,0 +1,47 @@
+.contactContainer {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8; /* Cambia el color de fondo según tu preferencia */
+  }
+  
+  .contactContent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .map {
+    width: 45%;
+    height: 300px; /* Ajusta según tus necesidades */
+    background-color: #ddd; /* Color de fondo temporal para el mapa */
+  }
+  
+  .formContainer {
+    width: 45%;
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formInput,
+  .formTextarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .formButton {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .formButton:hover {
+    background-color: #003d82;
+  }
+  

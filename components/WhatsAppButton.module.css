@@ -1,0 +1,19 @@
+/* components/WhatsAppButton.module.css */
+.whatsappButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+    cursor: pointer;
+  }
+  
+  .whatsappButton img {
+    width: 60px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    transition: transform 0.3s ease; /* Efecto de hover para aumentar tamaño */
+  }
+  
+  .whatsappButton:hover img {
+    transform: scale(1.1); /* Efecto de hover para aumentar tamaño */
+  }
+  

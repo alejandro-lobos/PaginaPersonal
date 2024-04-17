@@ -35,9 +35,9 @@ export default function Navbar() {
       <ul className={`${styles.navLinks} ${isOpen ? styles.showMenu : ''}`}>
         <li><Link href="/">Inicio</Link></li>
         <li><Link href="/about">Acerca de Mí</Link></li>
-        <li><Link href="/experience">Experiencia</Link></li>
+        <li><Link href="/experience">Proyectos</Link></li>
         <li><Link href="/contact">Contacto</Link></li>
-        <li><Link href="/curriculum">Currículum</Link></li>
+        <li><Link href="/curriculum">Redes Profesionales</Link></li>
       </ul>
      
     </nav>
