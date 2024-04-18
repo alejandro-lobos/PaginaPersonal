@@ -1,0 +1,42 @@
+/* components/Experience.module.css */
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los cuadros en el eje cruzado */
+    padding: 20px;
+    background: #fff; /* Ajusta el color de fondo según sea necesario */
+  }
+  
+  .experienceEntry {
+    position: relative;
+    width: 100%; /* O un ancho fijo si prefieres */
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    background: #f9f9f9; /* Ajusta el color de fondo según sea necesario */
+    border-left: 4px solid #e91e63; /* Ajusta el color de la barra lateral */
+    margin-bottom: 30px; /* Espacio entre entradas */
+    padding: 20px;
+  }
+  
+  .experienceDate {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    background: #e91e63; /* Ajusta el color de fondo según sea necesario */
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .experienceContent h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #333; /* Ajusta el color según sea necesario */
+  }
+  
+  .experienceContent p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666; /* Ajusta el color según sea necesario */
+  }
+  

@@ -12,6 +12,30 @@
   z-index: 1;
 }
 
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra el texto debajo de la imagen */
+  color: #fff; /* Cambia al color deseado */
+}
+
+.bannerImage {
+  width: 30%; /* Asegúrate de que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 1000px; /* Opcional: si quieres bordes redondeados */
+  /* Ajusta la sombra según tus preferencias */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bannerText {
+  margin-top: 20px; /* Espacio entre la imagen y la frase */
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente según sea necesario */
+  font-weight: bold; /* Opcional: si quieres que el texto sea más grueso */
+}
+
+
 /* Omitir si no es necesario */
 /* .background {
   position: absolute;

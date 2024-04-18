@@ -1,5 +1,5 @@
 import styles from './Contact.module.css'; // Asegúrate de crear este archivo CSS
-
+import Map from './Map'
 const Contact = () => {
   // Función para manejar el envío del formulario
   const handleSubmit = (event) => {
@@ -14,7 +14,7 @@ const Contact = () => {
       
       <div className={styles.contactContent}>
         <div className={styles.map}>
-          {/* Aquí puedes insertar tu mapa, por ejemplo, usando la API de Google Maps */}
+          <Map/>
         </div>
         
         <div className={styles.formContainer}>

@@ -5,6 +5,9 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import WhatsAppButton from '../components/WhatsAppButton';
 import SocialLinks from '../components/SocialLinks';
+import AboutMe from '../components/AboutMe';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
 import ProjectCarousel from '../components/ProjectCarrousel';
 import { useState, useEffect } from 'react';
 export default function Home() {
@@ -25,11 +28,26 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Banner/>
-      <Navbar />
-      <ProjectCarousel projects={projects} />
-      <SocialLinks /> 
-      <Contact/>
+    <Navbar />
+    <div id="inicio" > 
+      <Banner />
+    </div>
+    <div id="about"> 
+    <AboutMe/>
+    <Education/>
+    </div>
+    <div id="project"> 
+    <Experience/>
+    <ProjectCarousel projects={projects} />
+    </div>
+    <div id="contact"> 
+      <Contact />
+    </div>
+    
+    <div id="socialLinks"> 
+    <SocialLinks /> 
+    </div>
+   
       <Footer/>
       <WhatsAppButton />
     </div>

@@ -31,8 +31,8 @@ const ProjectCarousel = ({ projects }) => {
         <a href={project.html_url} target="_blank" rel="noopener noreferrer" key={project.id} className={styles.slide}>
             <Image
             src={`/images/${project.name}.jpg`}
-            width={300}
-            height={300}
+            width={1200}
+            height={1200}
             alt={project.name}
             className={styles.projectImage}
           />

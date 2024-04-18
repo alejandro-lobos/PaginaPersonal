@@ -1,37 +1,38 @@
 /* ProjectCarousel.module.css */
 .carouselContainer {
-    margin: 20px;
-    padding: 20px;
+    padding: 50px;
   }
   
   .slide {
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  /* Establece un alto fijo para cada slide para que todos tengan el mismo tamaño */
+  height: 500px; /* Ajusta según lo que necesites */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Esto distribuirá el espacio verticalmente */
+}
   
   .slide:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
   
   .projectImage {
-    width: 100%;
-    height: auto;
+    width: 100%; /* La imagen ocupará todo el ancho del .slide */
+    object-fit: cover; /* Asegura que la imagen cubra el área asignada */
     border-radius: 8px;
+    /* Establece una altura máxima para la imagen */
+    height: 90%; /* Ajusta según lo que necesites */
   }
-  
   .projectContent {
-    padding: 10px;
+    /* Si el contenido del proyecto es muy largo y puede hacer que la tarjeta crezca, puedes considerar añadir overflow */
+    overflow: hidden;
   }
   
-  .projectName {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
+  .projectName,
   .projectDescription {
-    font-size: 14px;
-    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
-  

@@ -1,0 +1,82 @@
+/* components/AboutMe.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color:transparent;
+
+    
+  }
+  
+  .imageContainer {
+    position: relative;
+  background-color: white;
+  background: linear-gradient(
+    to right, 
+    #ff4081 50%, 
+    transparent 50%
+  ) no-repeat top/100% 10px,
+  linear-gradient(
+    to right, 
+    #ff4081 50%, 
+    transparent 50%
+  ) no-repeat bottom/100% 10px,
+  linear-gradient(
+    to top, 
+    #ff4081 50%, 
+    #ff4081 50%
+  ) no-repeat left/10px 100%;
+  /* Añade padding, tamaño y otros estilos según sea necesario */
+  padding: 10px;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .infoContainer {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .detailsContainer {
+    margin-top: 20px;
+  }
+  
+  .resumeButton {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .botonDescarga {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botonDescarga:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Añade media queries y otros estilos necesarios para que coincida con tu diseño */
+  
