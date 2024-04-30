@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Banner from '../components/Banner'
 import Footer from '../components/Footer';
@@ -27,6 +28,14 @@ export default function Home() {
 
 
   return (
+  <>  
+    <Head>
+    <title>Alejandro Lobos</title>
+    <link rel="icon" sizes="16x16" href="/icons/lobo.png" type="image/png" />
+    <link rel="icon" sizes="32x32" href="/icons/lobo.png" type="image/png" />
+    <link rel="icon" sizes="96x96" href="/icons/lobo.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/lobo.png" />
+    </Head>
     <div className={styles.container}>
     <Navbar />
     <div id="inicio" > 
@@ -35,9 +44,9 @@ export default function Home() {
     <div id="about"> 
     <AboutMe/>
     <Education/>
+    <Experience/>
     </div>
     <div id="project"> 
-    <Experience/>
     <ProjectCarousel projects={projects} />
     </div>
     <div id="contact"> 
@@ -51,6 +60,7 @@ export default function Home() {
       <Footer/>
       <WhatsAppButton />
     </div>
+  </>
   );
 }
 

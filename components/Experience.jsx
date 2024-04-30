@@ -4,24 +4,24 @@ import styles from './Experience.module.css'; // Asume que tienes un archivo de 
 const experiences = [
   {
     id: 1,
-    date: "Ene 2020 - Presente",
-    title: "Desarrollador Senior",
-    company: "Tech Solutions Inc",
-    description: "Trabajo con un equipo de desarrollo ágil para crear aplicaciones web con React y Node.js."
+    date: "Mar 2024 - Presente",
+    title: "Co-funder - Desarrollador Front",
+    company: "Davit",
+    description: "• Fundé, planifiqué y desarrollé la empresa Davit en colaboración con un equipo multidisciplinario compuesto por dos abogados, un diseñador gráfico y dos informáticos."
   },
   {
-    id: 1,
-    date: "Ene 2020 - Presente",
-    title: "Desarrollador Senior",
-    company: "Tech Solutions Inc",
-    description: "Trabajo con un equipo de desarrollo ágil para crear aplicaciones web con React y Node.js."
+    id: 2,
+    date: "Dic 2022 - May 2023",
+    title: "Desarrollador Full Stack",
+    company: "Qaudal",
+    description: "• Recopilé requisitos de la empresa para diseñar y desarrollar la solución que necesitaban. • Desarrollé y probé la base de datos y la página de ventas de la empresa utilizando React y TypeScript, aplicando una metodología ágil como Scrum."
   },
   {
-    id: 1,
-    date: "Ene 2020 - Presente",
-    title: "Desarrollador Senior",
-    company: "Tech Solutions Inc",
-    description: "Trabajo con un equipo de desarrollo ágil para crear aplicaciones web con React y Node.js."
+    id: 3,
+    date: "Ene 2021 - Jun 2021",
+    title: "Desarrollador de Softwares",
+    company: "SENDA",
+    description: "• Planifiqué uno de los proyectos de SENDA para la prevención del consumo de drogas a través de una app móvil que permite a los usuarios encontrar diversas actividades. • Desarrollé y probé la aplicación móvil para plataformas Android e iOS, utilizando React Native junto con Node.js y Express."
   },
   // ... otros objetos de experiencia
 ];

@@ -7,12 +7,12 @@ const Education = () => {
       <div className={styles.timeline}>
         <div className={styles.timelineEntry}>
           <div className={styles.timelineDate}>
-            Jun 2018 - Mar 2019
+            Mar 2018 - Dic 2023
           </div>
           <div className={styles.timelineContent}>
-            <h3>Educational Specialist</h3>
-            <p>UNIVERSITY OF DEMOXYZ</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Ingenieria Civil Informatica</h3>
+            <p>Pontificia Universidad Catolica de Valparaiso</p>
+            <p>Titulado</p>
           </div>
         </div>
         {/* Repite timelineEntry para cada entrada */}

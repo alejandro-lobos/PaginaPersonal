@@ -32,27 +32,22 @@ const AboutMe = () => {
       </div>
       <div className={styles.infoContainer}>
         <h2>About Me</h2>
-        <p>Nullam ornare aliquam tincidunt ut a gravida augue, et and mod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div className={styles.statsContainer}>
-          <div>
-            <strong>550 +</strong> Clients
-          </div>
-          <div>
-            <strong>230 +</strong> Projects
-          </div>
-          <div>
-            <strong>190 +</strong> Requests
-          </div>
-        </div>
+        <p>Desarrollador Full Stack comprometido
+          con la innovación y el desarrollo de
+          soluciones de calidad. Me caracterizo
+          por ser una persona responsable y
+          apasionada, en constante búsqueda de
+          conocimiento y crecimiento personal en
+          el área de la informática.</p>
+  
         <div className={styles.detailsContainer}>
-          <div>Name: Kroo DeSuza</div>
-          <div>Email: desuza@example.com</div>
-          <div>Date of Birth: 28 June 1995</div>
-          <div>Contact: +999 999 999</div>
-          <div>Nationality: Indian</div>
-          <div>Address: Dewas 65 New dummy Road</div>
+          <div>Nombre: Alejandro Lobos Arenas</div>
+          <div>Correo: alejandro.lobosarenas@gmail.com</div>
+          <div>Contacto: +34639683333</div>
+          <div>Nacionalidad: Española-Chilena</div>
+          <div>Ubicacion: Madrid</div>
         </div>
-        <a href="/docs/ale.pdf" download="NombreDelArchivo.pdf" className={styles.botonDescarga}>
+        <a href="/docs/Alejandro Lobos.pdf" download="Alejandro Lobos.pdf" className={styles.botonDescarga}>
         Curriculum
         </a>
 
