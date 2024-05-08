@@ -3,7 +3,8 @@ import React from 'react'
 const blabla = () => {
   return (
     <div>
-      feafe
+      esto es momentaneo
+      
     </div>
   )
 }
