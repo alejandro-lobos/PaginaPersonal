@@ -11,9 +11,10 @@ const Banner = () => {
           alt="Alejandro Lobos"
           className="w-1/3 h-auto rounded-full shadow-lg"
         />
-        <p className="mt-10 text-2xl md:text-3xl lg:text-4xl font-bold text-white shadow-md">
-          Pasión - Disciplina - Triunfo.
-        </p>
+      <p className="mt-10 text-2xl md:text-3xl lg:text-4xl font-bold text-white shadow-md bg-black bg-opacity-40 p-3 rounded-xl">
+        Pasión - Disciplina - Triunfo.
+      </p>
+
       </div>
     </div>
   );
