@@ -15,6 +15,7 @@ const Banner = () => {
           Pasión, Disciplina, Triunfo.
         </p>
 
+
       </div>
     </div>
   );
