@@ -24,8 +24,11 @@ export default function Navbar() {
   });
   useEffect(() => {
     function handleResize() {
-        if (window.innerWidth >= 1100) {  // Asume que 768px es el breakpoint de 'md:'
-            setIsOpen(false);            // Cierra el menú si la pantalla es más ancha que 768px
+        if (window.innerWidth >= 1100) {  // Asume que 1100px es el breakpoint de 'md:'  
+
+
+
+
         }
     }
 
@@ -69,14 +72,13 @@ export default function Navbar() {
             <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="about" smooth={true} duration={500}>Acerca de Mí</Link>
         </li>
         <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center">
+            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="experience" smooth={true} duration={500}>Experiencia</Link>
+        </li>
+        <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center">
             <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="project" smooth={true} duration={500}>Proyectos</Link>
         </li>
-        <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center">
-            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="contact" smooth={true} duration={500}>Contacto</Link>
-        </li>
-        <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center">
-            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="socialLinks" smooth={true} duration={500}>Redes Profesionales</Link>
-        </li>
+     
+    
       </ul>
     </nav>
   );

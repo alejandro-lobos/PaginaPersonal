@@ -11,12 +11,26 @@ const ProjectCarousel = ({ projects }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+          breakpoint: 1100, // Bajo este ancho, el carrusel se ajustará para móviles
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              className: "center",
+              centerMode: true,
+
+          }
+      }
+  ]
     // Agrega más configuraciones según necesites
   };
 
   return (
     <>
-    <h2 className="flex flex-col justify-center text-center text-3xl md:text-5xl font-bold  my-10 ">
+    <h2 className="flex flex-col justify-center text-center text-3xl md:text-5xl font-bold  py-10 ">
     Proyectos
     </h2>
     <div className="p-12">
@@ -29,7 +43,7 @@ const ProjectCarousel = ({ projects }) => {
               width={1200}
               height={1200}
               alt={project.name}
-              className="w-full object-cover rounded-lg h-4/5"
+              className="w-full object-content rounded-lg h-4/5"
             />
             <div className="overflow-hidden">
               <div className="truncate text-lg font-semibold">{project.name}</div>
