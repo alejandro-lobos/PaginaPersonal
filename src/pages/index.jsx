@@ -21,7 +21,7 @@ export default function Home() {
       fetchProjects();
     }, []);
   return (
-    <div className="relative min-h-screen bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/images/tp3.jpg')" }}>
+    <div className="relative min-h-screen bg-fixed bg-cover  bg-no-repeat md:bg-cover" style={{ backgroundImage: "url('/images/tp3.jpg')" }}>
         <Head>
             <title>Alejandro Lobos</title>
             <link rel="icon" sizes="16x16" href="/icons/lobo.png" type="image/png" />
@@ -43,7 +43,7 @@ export default function Home() {
             </h2>
             <Experience />
           </div>
-          <div id="project" className="bg-gray-bg">
+          <div id="project" className=" flex flex-col bg-gray-bg">
             <ProjectCarousel projects={projects} />
           </div>
         </main>
