@@ -32,7 +32,7 @@ const Banner = () => {
               Pasión, Disciplina, Triunfo.
             </p>
             <p className='hidden lg:block text-sm lg:text-xl text-center justify-center '>
-            ¡Bienvenido a mi sitio personal! Aquí comparto mi trabajo y especialidades. Si te interesa colaborar, ¡contáctame! Juntos podemos llevar tus proyectos al siguiente nivel.
+            ¡Bienvenido a mi sitio personal! Aquí comparto mi trabajo. Si te interesa colaborar, ¡contáctame! Juntos podemos llevar tus proyectos al siguiente nivel.
             </p>
 
           </div>
@@ -42,5 +42,7 @@ const Banner = () => {
     </div>
   );
 };
+
+
 
 export default Banner;
