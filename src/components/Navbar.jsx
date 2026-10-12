@@ -1,84 +1,88 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { useState } from "react";
+
+const navigation = [
+  { href: "#proyectos", label: "Proyectos" },
+  { href: "#voleibol", label: "Voleibol" },
+  { href: "#ideas", label: "Ideas" },
+  { href: "#sobre-mi", label: "Sobre mí" },
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  // Función que maneja el evento de desplazamiento
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
 
-  // Configurar listener para el evento de desplazamiento
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
-  useEffect(() => {
-    function handleResize() {
-        if (window.innerWidth >= 1100) {  // Asume que 1100px es el breakpoint de 'md:'  
-
-
-
-
-        }
-    }
-
-    // Añadir el event listener
-    window.addEventListener('resize', handleResize);
-
-    // Limpiar el event listener al desmontar el componente
-    return () => window.removeEventListener('resize', handleResize);
-}, []);  // Dependencias vacías para ejecutar solo en el montaje y desmontaje
-
-    // Manejar el redimensionamiento de la ventana
-    useEffect(() => {
-      function handleResize() {
-          if (window.innerWidth >= 1100) {
-              setIsOpen(false);
-          }
-      }
-
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  function closeMenu() {
+    setIsOpen(false);
+  }
 
   return (
-    <nav className={`fixed top-0 left-0 w-full flex justify-between  items-center  px-4 sm:px-6 lg:px-8 py-3 z-50 transition-colors duration-300 ${scrolled || isOpen ? 'bg-black bg-opacity-60' : 'bg-transparent'}} bg-opacity-70 text-white`}>
-      <Link 
-        to="inicio" 
-        smooth={true} 
-        duration={500}
-        className="text-white no-underline transition-colors duration-800 hover:text-blue-500 text-sm sm:text-md lg:text-lg cursor-pointer"
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
+      <nav
+        aria-label="Navegación principal"
+        className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-12"
       >
-        ALEJANDRO LOBOS
-      </Link>
-      <div className="lg:hidden text-4xl cursor-pointer" onClick={() => setIsOpen(!isOpen)}>  
-        &#9776;
-      </div>
-      <ul className={`absolute lg:relative w-full lg:w-auto flex flex-col lg:flex-row transition-all ease-out duration-300   ${isOpen ? 'top-16 left-0 bg-black bg-opacity-60  lg:bg-transparent block ' : 'hidden lg:flex'} text-white`}>
-        <li className="ml-0 md:ml-20 transition-colors duration-200 ali flex justify-center my-3">
-            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="inicio" smooth={true} duration={500}>Inicio</Link>
-        </li>
-        <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center my-3">
-            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="about" smooth={true} duration={500}>Acerca de Mí</Link>
-        </li>
-        <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center my-3">
-            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="experience" smooth={true} duration={500}>Experiencia</Link>
-        </li>
-        <li className="ml-0 md:ml-20 transition-colors duration-200 flex justify-center my-3">
-            <Link className="font-medium no-underline transition-colors duration-800 hover:text-blue-500 relative cursor-pointer" to="project" smooth={true} duration={500}>Proyectos</Link>
-        </li>
-     
-    
-      </ul>
-    </nav>
+        <a
+          href="#inicio"
+          onClick={closeMenu}
+          className="rounded-sm text-sm font-semibold tracking-[-0.03em] text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-indigo-600 sm:text-base"
+        >
+          Alejandro Lobos<span className="text-indigo-600">.</span>
+        </a>
+
+        <button
+          type="button"
+          aria-expanded={isOpen}
+          aria-controls="primary-navigation"
+          aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+          onClick={() => setIsOpen((open) => !open)}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 transition hover:border-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:hidden"
+        >
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            className="h-5 w-5"
+          >
+            {isOpen ? (
+              <path
+                d="m6 6 12 12M18 6 6 18"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeWidth="1.8"
+              />
+            ) : (
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeWidth="1.8"
+              />
+            )}
+          </svg>
+        </button>
+
+        <div
+          id="primary-navigation"
+          className={`${isOpen ? "absolute inset-x-4 top-[4.5rem] flex flex-col rounded-2xl border border-slate-200 bg-white p-3 shadow-xl" : "hidden"} md:static md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none`}
+        >
+          {navigation.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={closeMenu}
+              className="rounded-lg px-3 py-3 text-sm font-medium text-slate-600 transition hover:text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:px-0 md:py-2"
+            >
+              {item.label}
+            </a>
+          ))}
+          <a
+            href="#contacto"
+            onClick={closeMenu}
+            className="mt-1 inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:mt-0"
+          >
+            Hablemos
+          </a>
+        </div>
+      </nav>
+    </header>
   );
 }
