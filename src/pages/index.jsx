@@ -17,7 +17,7 @@ export default function Home() {
         <title>Alejandro Lobos | Tecnología, productos digitales y voleibol</title>
         <meta
           name="description"
-          content="Soy Alejandro Lobos, Ingeniero Civil Informático, profesional de telecomunicaciones, entrenador de voleibol y constructor de productos digitales."
+          content="Soy Alejandro Lobos, Ingeniero Civil Informático. Creo productos digitales, exploro tecnología aplicada a problemas reales y entreno voleibol."
         />
         <meta property="og:type" content="website" />
         <meta

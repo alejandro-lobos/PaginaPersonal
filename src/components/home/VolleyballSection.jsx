@@ -23,9 +23,22 @@ export default function VolleyballSection() {
             equipo. Como entrenador, acompaño el desarrollo de personas dentro
             y fuera de la cancha.
           </p>
+          <div className="mt-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-indigo-200">
+              Actualmente entrenando
+            </p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm font-medium text-white">
+                <span aria-hidden="true">🏐 </span>Equipo Cadete Femenino
+              </li>
+              <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm font-medium text-white">
+                <span aria-hidden="true">🏐 </span>Equipo Alevín Mixto
+              </li>
+            </ul>
+          </div>
           <ArrowLink
             href="mailto:alejandro.lobosarenas@gmail.com?subject=Voleibol"
-            className="mt-8 text-indigo-300 hover:text-white"
+            className="mt-7 text-indigo-300 hover:text-white"
           >
             Hablemos de voleibol
           </ArrowLink>

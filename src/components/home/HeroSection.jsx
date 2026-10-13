@@ -29,9 +29,9 @@ export default function HeroSection() {
             Construyo soluciones.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl sm:leading-9">
-            Soy Alejandro Lobos, Ingeniero Civil Informático, profesional de
-            telecomunicaciones, entrenador de voleibol y constructor de
-            productos digitales.
+            Soy Alejandro Lobos, Ingeniero Civil Informático. Creo productos
+            digitales, exploro tecnología aplicada a problemas reales y entreno
+            voleibol.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a

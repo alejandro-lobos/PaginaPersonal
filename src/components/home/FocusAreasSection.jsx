@@ -20,7 +20,7 @@ const areas = [
     number: "02",
     title: "Tecnología",
     description:
-      "Soy Ingeniero Civil Informático y trabajo en el sector de las telecomunicaciones.",
+      "Aplico tecnología con curiosidad y criterio para abordar problemas reales y convertir ideas en soluciones útiles.",
     href: "#sobre-mi",
     linkLabel: "Conocer mi experiencia",
     icon: (

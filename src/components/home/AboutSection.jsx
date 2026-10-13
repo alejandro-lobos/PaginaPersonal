@@ -26,12 +26,13 @@ export default function AboutSection() {
           <SectionHeading
             id="about-title"
             eyebrow="Sobre mí"
-            title="Tecnología y personas, en el centro."
-            description="Soy Alejandro Lobos, Ingeniero Civil Informático. Trabajo en telecomunicaciones, desarrollo aplicaciones y productos digitales, y también soy entrenador de voleibol."
+            title="Crear, aprender y crecer en equipo."
+            description="Soy Alejandro Lobos, Ingeniero Civil Informático. Me enfoco en crear productos digitales, aprender continuamente y aplicar tecnología a problemas reales."
           />
           <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-            Me interesa aprender de cada desafío y colaborar para convertir
-            necesidades reales en soluciones útiles.
+            Actualmente trabajo en el sector de las telecomunicaciones. También
+            soy entrenador de voleibol, donde desarrollo liderazgo y acompaño
+            el crecimiento de los equipos.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-4">
             <ArrowLink href="mailto:alejandro.lobosarenas@gmail.com">

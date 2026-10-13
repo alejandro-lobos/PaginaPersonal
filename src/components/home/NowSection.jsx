@@ -3,18 +3,21 @@ import SectionHeading from "@/components/home/SectionHeading";
 const currentFocus = [
   {
     number: "01",
-    title: "Telecomunicaciones",
-    description: "Mi trabajo actual en el sector de las telecomunicaciones.",
+    title: "Plataforma para entrenadores deportivos",
+    description:
+      "Diseñando una aplicación móvil para entrenadores centrada en planificación, gestión de equipos y análisis de partidos.",
   },
   {
     number: "02",
-    title: "Productos digitales",
-    description: "Desarrollo de aplicaciones y productos digitales.",
+    title: "Web personal",
+    description:
+      "Construyendo mi ecosistema digital y documentando los proyectos que estoy creando.",
   },
   {
     number: "03",
-    title: "Aprendizaje continuo",
-    description: "Seguir aprendiendo y llevando nuevas ideas a la práctica.",
+    title: "Inteligencia artificial y automatización",
+    description:
+      "Explorando nuevas formas de acelerar el desarrollo de productos y procesos.",
   },
 ];
 
@@ -30,7 +33,7 @@ export default function NowSection() {
             id="now-title"
             eyebrow="En movimiento"
             title="En qué estoy trabajando ahora."
-            description="Mi presente combina el trabajo en telecomunicaciones con la construcción de productos digitales."
+            description="Ideas en diseño, proyectos en construcción y nuevas herramientas en exploración."
           />
         </div>
 
